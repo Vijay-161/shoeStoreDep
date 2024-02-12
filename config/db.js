@@ -13,3 +13,7 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
+
+
+// LOCAL_DATABASE_URI='mongodb://127.0.0.1:27017/shoeStore'

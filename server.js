@@ -52,6 +52,11 @@ app.use(helmet());
 // Prevent XSS attacks
 app.use(xss());
 
+//test main
+app.get("/", (req,res)=> {
+  res.send("Api is running on port 3001")
+})
+
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
 // app.use(express.static('public'));
